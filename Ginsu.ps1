@@ -1,9 +1,16 @@
-<# 
+<#
+ ██████╗ ██╗███╗   ██╗███████╗██╗   ██╗
+██╔════╝ ██║████╗  ██║██╔════╝██║   ██║
+██║  ███╗██║██╔██╗ ██║███████╗██║   ██║
+██║   ██║██║██║╚██╗██║╚════██║██║   ██║
+╚██████╔╝██║██║ ╚████║███████║╚██████╔╝
+ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝ 
+                                       
 .NOTES
     File Name: Ginsu.ps1
     Author: Doug Metz
     Prerequisities: 7za.exe executable 'put' via Defender console
-    Version: 1.0
+    Version: 1.1
 .SYNOPSIS
     Compresses a folder using 7zip and splits the resulting archives into 3GB or less sections.
 .DESCRIPTION
@@ -23,14 +30,7 @@ if (-not (Test-Path $7zipPath)) {
     exit
 }
 # Create output directory if it doesn't exist
-Write-host -fore Yellow "
- ██████╗ ██╗███╗   ██╗███████╗██╗   ██╗
-██╔════╝ ██║████╗  ██║██╔════╝██║   ██║
-██║  ███╗██║██╔██╗ ██║███████╗██║   ██║
-██║   ██║██║██║╚██╗██║╚════██║██║   ██║
-╚██████╔╝██║██║ ╚████║███████║╚██████╔╝
- ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝ 
-                                       
+Write-host -fore Yellow "GINSU
 "
 Write-host "    https://github.com/dwmetz/Ginsu
 "
