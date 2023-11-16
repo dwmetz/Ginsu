@@ -17,7 +17,7 @@
    Function:
   </h5>
 
-- Compresses a folder using 7zip and splits the resulting archives into 3GB or less sections.
+- PowerShell utility to compresses a folder using 7zip and splits the resulting archives into 3GB or less sections.
 <h5>
    Prerequisites:
 </h5>
