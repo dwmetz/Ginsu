@@ -14,10 +14,8 @@
 .SYNOPSIS
     Compresses a folder using 7zip and splits the resulting archives into 3GB or less sections.
 .DESCRIPTION
-    This script uses 7zip (7za.exe) to compress a specified folder and then splits the resulting archive into sections of 3GB or less. 
-    It will work (and was designed for) files larger than 3GB.  Windows Defender Live Response currently only supports pulling back files 
-    of 3GB or less via the console. If your collection is larger than that, you will need to repackage it using Ginsu, or use a method 
-    outside of the console to retrieve the files.
+    This script uses 7zip to compress a specified folder and then splits the resulting
+    archive into sections of 3GB or less. It will work (and was designed for) files larger than 3GB.Windows Defender Live Response currently only supports pulling back files of 3GB or less via the console. If your collection is larger than that you will need to repackage it using Ginsu, or use a method outside of the console to retrieve the files.
 #>
 # Directory to be Zipped
 $source = "C:\Temp\RESPONSE"
@@ -32,9 +30,10 @@ if (-not (Test-Path $7zipPath)) {
     exit
 }
 # Create output directory if it doesn't exist
-Write-host -fore Yellow "GINSU
+Write-host -fore Yellow "
+// GINSU //
 "
-Write-host "    https://github.com/dwmetz/Ginsu
+Write-host "https://github.com/dwmetz/Ginsu
 "
 Write-host -fore Yellow "[Chopping $source]"
 $outputDirectory = "C:\Temp\RESPONSE\Ginsu"
