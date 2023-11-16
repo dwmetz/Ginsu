@@ -32,7 +32,6 @@
 >- Author: Doug Metz
 >- Version: 1.0
 
-    
 <h5>
    Synopsis:
 </h5>
